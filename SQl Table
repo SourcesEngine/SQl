@@ -1,0 +1,49 @@
+
+
+CREATE DATABASE NameOfDatabase;
+
+USE Database;
+
+CREATE TABLE Professors (
+    professor_id INT PRIMARY KEY IDENTITY(1,1),
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    contact_number VARCHAR(15),
+    major VARCHAR(50),
+    department VARCHAR(50)
+);
+
+CREATE TABLE Courses (
+    course_id INT PRIMARY KEY IDENTITY(1,1),
+    title VARCHAR(100) NOT NULL,
+    description TEXT,
+    department VARCHAR(50) NOT NULL
+);
+CREATE TABLE Rooms (
+    room_id INT PRIMARY KEY IDENTITY(1,1),
+    room_name VARCHAR(50) NOT NULL,
+    building VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE ClassSchedules (
+    class_id INT PRIMARY KEY IDENTITY(1,1),
+    course_id INT,
+    schedule VARCHAR(50),
+    room_id INT,
+    professor_id INT,
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id),
+    FOREIGN KEY (room_id) REFERENCES Rooms(room_id),
+    FOREIGN KEY (professor_id) REFERENCES Professors(professor_id)
+);
+
+
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY IDENTITY(1,1),
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    contact_number VARCHAR(15),
+    address VARCHAR(100),
+    course_id INT,
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id)
+);
+
