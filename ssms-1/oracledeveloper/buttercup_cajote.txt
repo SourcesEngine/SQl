@@ -1,0 +1,244 @@
+CREATE TABLE BUTTERCUP_CAJOTE
+(
+PART_ID int,
+SURNAME VARCHAR(50)NOT NULL,
+FIRSTNAME VARCHAR(50)NOT NULL,
+MIDDLEINITIAL VARCHAR(50),
+GENDER VARCHAR(6) NOT NULL,
+AGE DECIMAL(3)NOT NULL,
+LRN DECIMAL(12)UNIQUE,
+PRIMARY KEY (PART_ID)
+);
+
+
+INSErt into BUTTERCUP_CAJOTE VALUES(1,'Alegado','Leodilbert Jr','C','Male',18,11111101);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(2,'Alonzo','Brixter','C','Male',17,11111102);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(3,'Alvancis','Aldrin Joseph Jr','C','Male',18,11111103);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(4,'Alvarez','Mike Lawrence','','Male',18,1354410058);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(5,'Ancheta','Dranrem','','Male',18,11111105);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(6,'Arnuco','Christian David','S','Male',18,11111106);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(7,'Bercilla','Earl Glyndon','C','Male',17,107953100029);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(8,'Bondoc','Jan Karol','S','Male',18,11111108);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(9,'Butac','Christian Josh','C','Male',18,11111109);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(10,'Butal','Gary Jr','N','Male',18,111111010);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(11,'Cagurungan','Jeremy Neil','S','Male',18,111111011);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(12,'Cajote','Jerry','B','Male',18,12510710007);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(13,'Canovas','Karl Matthew','','Male',18,111111013);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(14,'Catapang','Lawrence','P','Male',17,107954100079);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(15,'Cobarrubias','Rheynier','M','Male',18,111111015);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(16,'Cobarrubias','Rheywin','M','Male',18,111111016);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(17,'Dane','Ken Olliver','B','Male',18,111111017);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(18,'Daraog','Isiah Adrian','U','Male',17,164017100195);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(19,'Deguiño','Rufimel Ken','F','Male',17,107967100169);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(20,'Dela Cruz','Carlo','M','Male',18,111111020);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(21,'Dela Cruz','Jhon Iverson','L','Male',18,111111021);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(22,'Dreo','Jasper John','D','Male',18,107954100114);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(23,'CANOVAS','Dustin Jake','','Male',18,111111023);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(24,'Esaias','Nheil Mark','B','Male',18,111111024);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(25,'Escalante','Jimboy','B','Male',18,111111025);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(26,'Gallego','Jan Danielle','','Male',18,111111026);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(27,'Garcia','Jermaine Ellis','B','Male',18,111111027);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(28,'Guevarra','Sherwin Jr.','A','Male',18,111111028);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(29,'Jordan','Marc Justin','D','Male',18,111111029);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(30,'Langreo','Rexen Von','','Male',18,111111030);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(31,'Lominoque','Gian Carl ','A','Male',18,111111031);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(32,'Londres','Lynstone James ','A','Male',18,111111032);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(33,'Lubang','Carl Jasper','T','Male',18,111111033);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(34,'Lumagdang','Jefferson','','Male',18,111111034);
+INSErt into BUTTERCUP_CAJOTE VALUES(35,'Macaballes','Sean Dherick','','Male',18,111111035);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(36,'Marcos','Karl Ivangelo','M','Male',18,111111036);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(37,'Masula','Christian','C','Male',18,111111037);
+INSErt into BUTTERCUP_CAJOTE VALUES(38,'Medina','Aldrae','','Male',18,111111038);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(39,'Melchor','Francis','A','Male',18,111111039);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(40,'Meñozo','Mennard','M','Male',18,111111040);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(41,'Montano','Miles Vincent','','Male',18,111111041);
+INSErt into BUTTERCUP_CAJOTE VALUES(42,'Olazo','Gaverielle Amir','B','Male',18,111111042);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(43,'Paguiligan','Kin Clark','','Male',18,111111043);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(44,'RecelIs','Rem Ivan Llyod','','Male',18,111111044);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(45,'Rodriguez','Alexis','G','Male',18,111111045);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(46,'Rufo','Jasper-Van','L','Male',18,111111046);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(47,'Salva','Merven ','','Male',18,111111047);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(48,'Sampaga','Rhay Justin','A','Male',18,111111048);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(49,'Senica','Bryliant Ellies','L','Male',18,111111049);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(50,'Solis','Jared','','Male',18,111111050);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(51,'TAGALA','Peter Duane','','Male',18,111111051);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(52,'Tagle','Carl Justine','C','Male',18,107950130107);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(53,'Villaluz','Aaron James','P','Male',18,111111053);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(54,'Zamora','Zyrone','','Male',18,111111054);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(55,'Antonio','Relly Bhel','S','FEMALE',18,111111055);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(56,'Deloso','Nicole','','FEMALE',18,111111056);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(57,'Demandante','Tristen Loraine','','FEMALE',18,111111057);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(58,'Estoya','Micaella','B','FEMALE',18,111111058);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(59,'Fernandez','Aereel Joy','V','FEMALE',18,11111159);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(60,'Malaga','Lara Eunice','','FEMALE',16,111111060);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(61,'Nueva','Princess Anne','P','FEMALE',18,111111061);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(62,'Orata','Princess Mia Bell','S','FEMALE',18,111111062);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(63,'Pilapil','Jezza Charlize','G','FEMALE',18,111111063);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(64,'Rentoy','Samantha Nicole','V','FEMALE',18,111111064);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(65,'Sipat','Ana Marie','A','FEMALE',18,111111065);
+
+INSErt into BUTTERCUP_CAJOTE VALUES(66,'Tatad','Beatriz Ann','A','FEMALE',18,111111066);
+
+select *from BUTTERCUP_CAJOTE;
+
+select * from buttercup_cajote
+where lrn LIKE '%7'
+order by age;
+
+SELECT * FROM BUTTERCUP_CAJOTE
+WHERE MIDDLEINITIAL IS NULL
+ORDER BY AGE DESC;
+
+SELECT * FROM BUTTERCUP_CAJOTE
+WHERE MIDDLEINITIAL IS NOT NULL
+ORDER BY AGE asc;
+
+SELECT 
+surname,
+FIRSTNAME,
+AGE
+FROM BUTTERCUP_CAJOTE;
+
+select 
+surname,
+firstname,
+age
+from buttercup_cajote
+order by surname asc;
+
+
+select 
+surname,
+firstname
+from buttercup_cajote
+order by surname,firstname asc;
+
+select 
+surname,
+firstname
+from buttercup_cajote
+order by 2 desc,1;
+
+select 
+surname,
+firstname,
+age
+from buttercup_cajote
+order by firstname,surname;
+
+select 
+surname,
+firstname,
+age,
+middleinitial
+from buttercup_cajote
+order by middleinitial asc nulls first;
+
+select 
+surname,
+firstname
+from buttercup_cajote
+order by UPPER(surname);
+
+select 
+surname,
+firstname,
+age,
+lrn
+from buttercup_cajote
+order by lrn desc;
+
+update buttercup_cajote
+set lrn =123456789,
+age=17
+where
+part_id =12;
+
+select * from buttercup_cajote
+where part_id=2
+and part_id = 13;
+
+update buttercup_cajote
+set lrn =lrn+12345678;
+
+delete from buttercup_cajote
+where part_id =66 
+and surname ='Cajote';
+
+delete from buttercup_cajote
+where part_id = 66;
+
+delete from buttercup_cajote
+where surname = 'Cajote';
+
+delete from buttercup_cajote
+where part_id= 13
+;
+
+delete from buttercup_cajote
+where part_id=1;
+commit work;
+
+
+
