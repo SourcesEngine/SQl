@@ -1,0 +1,71 @@
+BEGIN TRANSACTION;
+
+
+UPDATE Students
+SET Balance = Balance - 1000
+WHERE S_ID IN (20, 70);  
+
+
+INSERT INTO Payment (P_ID, Date, Amount, S_ID)
+VALUES (2, '2020-07-21', 1000, 20), 
+       (3, '2020-07-21', 1000, 70);
+
+COMMIT;
+
+
+
+
+BEGIN TRANSACTION;
+
+UPDATE Students
+SET Balance = Balance - 15000
+WHERE S_ID = 50;  -- Slark
+
+INSERT INTO Payment (P_ID, Date, Amount, S_ID)
+VALUES (4, '2020-07-28', 15000, 50);
+
+ROLLBACK;
+
+UPDATE Students
+SET Balance = 0
+WHERE S_ID = 90;  -- Lina
+
+INSERT INTO Payment (P_ID, Date, Amount, S_ID)
+VALUES (5, '2020-07-28', 15000, 90);
+
+COMMIT;
+
+
+
+
+BEGIN TRANSACTION;
+
+UPDATE Students
+SET Balance = Balance - 14000  -- Overpaid amount
+WHERE S_ID = 20;  -- Medusa
+
+INSERT INTO Payment (P_ID, Date, Amount, S_ID)
+VALUES (6, '2020-08-01', 14000, 20);
+
+ROLLBACK;
+
+-- Inform that the payment could not proceed
+-- In reality, you could trigger a message in your system here
+-- But in SQL, we simply rollback the transaction
+
+COMMIT;
+
+
+
+BEGIN TRANSACTION;
+
+
+UPDATE Students
+SET Balance = 18000  
+WHERE S_ID = 50; 
+
+INSERT INTO Payment (P_ID, Date, Amount, S_ID)
+VALUES (7, '2020-08-05', 18000, 50);
+
+COMMIT;
+
